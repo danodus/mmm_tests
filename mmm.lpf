@@ -26,26 +26,26 @@ IOBUF PORT  "led2" PULLMODE=UP IO_TYPE=LVCMOS33 DRIVE=4;
 #	DVI -----------------------------------------------------------------------
 #
 
-LOCATE COMP "dio_n[0]" SITE "J1";
+LOCATE COMP "dio_n[0]" SITE "M3"; # blue -
 IOBUF PORT "dio_n[0]" IO_TYPE=LVCMOS33D DRIVE=4;
 
-LOCATE COMP "dio_p[0]" SITE "K2";
+LOCATE COMP "dio_p[0]" SITE "N3"; # blue +
 IOBUF PORT "dio_p[0]" IO_TYPE=LVCMOS33D DRIVE=4;
 
-LOCATE COMP "dio_n[1]" SITE "M3";
+LOCATE COMP "dio_n[1]" SITE "K5"; # green -
 IOBUF PORT "dio_n[1]" IO_TYPE=LVCMOS33D DRIVE=4;
 
-LOCATE COMP "dio_p[1]" SITE "N3";
+LOCATE COMP "dio_p[1]" SITE "K4"; # green +
 IOBUF PORT "dio_p[1]" IO_TYPE=LVCMOS33D DRIVE=4;
 
-LOCATE COMP "dio_n[2]" SITE "K5";
+LOCATE COMP "dio_n[2]" SITE "J1"; # red -
 IOBUF PORT "dio_n[2]" IO_TYPE=LVCMOS33D DRIVE=4;
 
-LOCATE COMP "dio_p[2]" SITE "K4";
+LOCATE COMP "dio_p[2]" SITE "K2"; # red +
 IOBUF PORT "dio_p[2]" IO_TYPE=LVCMOS33D DRIVE=4;
 
-LOCATE COMP "dio_n[3]" SITE "P2";
+LOCATE COMP "dio_n[3]" SITE "P2"; # clock -
 IOBUF PORT "dio_n[3]" IO_TYPE=LVCMOS33D DRIVE=4;
 
-LOCATE COMP "dio_p[3]" SITE "P1";
+LOCATE COMP "dio_p[3]" SITE "P1"; # clock +
 IOBUF PORT "dio_p[3]" IO_TYPE=LVCMOS33D DRIVE=4;
