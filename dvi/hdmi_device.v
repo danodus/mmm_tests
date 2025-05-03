@@ -27,10 +27,10 @@ module hdmi_device(
            input in_vga_vsync,
            input in_vga_hsync,
 
-           output [OUT_TMDS_MSB:0] out_tmds_red,
-           output [OUT_TMDS_MSB:0] out_tmds_green,
-           output [OUT_TMDS_MSB:0] out_tmds_blue,
-           output [OUT_TMDS_MSB:0] out_tmds_clk
+           output [(DDR_ENABLED ? 1 : 0):0] out_tmds_red,
+           output [(DDR_ENABLED ? 1 : 0):0] out_tmds_green,
+           output [(DDR_ENABLED ? 1 : 0):0] out_tmds_blue,
+           output [(DDR_ENABLED ? 1 : 0):0] out_tmds_clk
        );
 
 parameter DDR_ENABLED = 0;
